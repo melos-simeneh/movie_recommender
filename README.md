@@ -59,8 +59,11 @@ Swagger at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 ## API Endpoints
 
 - **GET** `/`
+
     Returns a simple welcome message.
+
 - **POST** `/recommend`
+
     Get movie recommendations by sending a JSON body with the movie title and number of recommendations.
 
 ## Example usage
@@ -68,16 +71,16 @@ Swagger at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 **Request body:**
 
 ```json
-    {
+{
     "title": "Toy Story (1995)",
     "num_recs": 5
-    }
+}
 ```
 
 **Response:**
 
 ```json
-    {
+{
     "recommendations": [
         "Jumanji (1995)",
         "Grumpier Old Men (1995)",
@@ -85,7 +88,7 @@ Swagger at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
         "Heat (1995)",
         "Sabrina (1995)"
     ]
-    }
+}
 ```
 
 ## Contact
