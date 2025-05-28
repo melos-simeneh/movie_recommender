@@ -29,8 +29,8 @@ movie_recommender/
 1. **Clone the repo**
 
     ```bash
-        git clone https://github.com/melos-simeneh/movie_recommender.git
-        cd movie_recommender
+    git clone https://github.com/melos-simeneh/movie_recommender.git
+    cd movie_recommender
     ```
 
 2. **Create and activate a virtual environment**
@@ -91,4 +91,5 @@ Swagger at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 ## Contact
 
 Feel free to reach out for questions, feedback, or collaboration!
+
 **Happy Coding!** 📬
