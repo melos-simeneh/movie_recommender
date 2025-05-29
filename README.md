@@ -54,7 +54,8 @@ uvicorn main:app --reload
 ```
 
 The API will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
-Swagger at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+The Swagger documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ## API Endpoints
 
