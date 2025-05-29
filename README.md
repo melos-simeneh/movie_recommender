@@ -1,16 +1,29 @@
 # 🎬 Movie Recommendation System API
 
-A simple movie recommendation system built with **FastAPI** and **Python**.
-This API provides movie suggestions based on similarity of movie genres and titles.
+A simple movie recommendation system built with **FastAPI** and **Python**, using **TF-IDF** and **cosine similarity** for content-based recommendations based on movie titles and genres.
 
-## Features
+## 🚀 Features
 
-- FastAPI backend with endpoints to get movie recommendations
-- Sample dataset with 100 popular movies
-- Uses cosine similarity on movie features for recommendations
-- Easy to extend with more data or better recommendation logic
+- ✅ FastAPI backend with auto-generated Swagger UI
+- ✅ Content-based filtering using TF-IDF and cosine similarity
+- ✅ RESTful API with both GET and POST endpoints
+- ✅ Clean and lightweight – perfect for beginners
 
-## Project Structure
+## 🧠 Machine Learning Algorithm
+
+This project uses a Content-Based Filtering approach powered by:
+
+- **TF-IDF Vectorization:** Converts movie titles and genres into numerical vectors based on the importance of words.
+- **Cosine Similarity:** Measures how similar two movies are based on their vectorized text.
+
+## 🔍 How It Works
+
+1. Combine title and genres into a single text feature.
+2. Apply TF-IDF vectorization to extract relevant features from text.
+3. Compute cosine similarity scores between movies.
+4. Recommend the most similar movies based on the input movie title.
+
+## 📂 Project Structure
 
 ```bash
 movie_recommender/
@@ -24,7 +37,7 @@ movie_recommender/
 └── README.md
 ```
 
-## Installation
+## 📦 Installation
 
 1. **Clone the repo**
 
@@ -47,7 +60,10 @@ movie_recommender/
     pip install -r requirements.txt
     ```
 
-## Running the API
+4. **Ensure your movies.csv is properly formatted**
+(Titles with commas must be enclosed in double quotes.)
+
+## ▶️ Running the API
 
 ```bash
 uvicorn main:app --reload
@@ -57,7 +73,7 @@ The API will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 The Swagger documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
-## API Endpoints
+## 📡 API Endpoints
 
 - **GET** `/`
 
@@ -92,8 +108,8 @@ The Swagger documentation at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/
 }
 ```
 
-## Contact
+## 📬 Contact
 
 Feel free to reach out for questions, feedback, or collaboration!
 
-**Happy Coding!** 📬
+**Happy Coding!** 🚀
